@@ -2,5 +2,5 @@ Personal website version 2. [Version 1 available ](http://site.bgabrielma.work)
 
 ## bgabrielma website
 
-Front-end: React
+Front-end: React <br />
 Back-end: Node [Back-end repo](#)
