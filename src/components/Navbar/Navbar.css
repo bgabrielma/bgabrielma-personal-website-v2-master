@@ -1,0 +1,18 @@
+.navbar {
+  background: #2196f3 !important;
+  height: 70px !important;
+}
+
+@media all and (max-width: 1000px) {
+  .navbar,
+  form {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: initial !important;
+  }
+
+  form input {
+    width: 200px !important;
+  }
+}
