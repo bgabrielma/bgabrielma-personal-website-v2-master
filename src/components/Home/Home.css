@@ -1,0 +1,65 @@
+.logo250 {
+  width: 250px !important;
+  height: 250px !important;
+}
+
+.logo150 {
+  width: 150px !important;
+  height: 250px !important;
+}
+
+.logo350 {
+  width: 350px !important;
+  height: 250px !important;
+}
+
+.btn-outline-website {
+  width: 200px !important;
+  height: 50px !important;
+  color: #20bdf1;
+  border-color: #20bdf1;
+}
+
+.btn-outline-website:hover {
+  color: #ffffff;
+  background-color: #20bdf1;
+  border-color: #20bdf1
+}
+
+.skills {
+  background: #ffffff;
+  padding: 20px;
+  min-height: 600px;
+}
+
+.sf-color-lightblue {
+  background: #20BDF1;
+}
+
+.separator-frame {
+  height: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  background: #2196F3;
+  padding: 50px;
+  color: #ffffff;
+  margin-top: 20px;
+  font-style: italic;
+  margin-bottom: 70px;
+  border-radius: 89% 11% 89% 11% / 29% 79% 21% 71%;
+}
+
+@media all and (max-width: 1000px) {
+  .logo250 {
+    width: 130px !important;
+    height: 130px !important;
+  }
+
+  .logo150 {
+    width: 75px !important;
+    height: 130px !important;
+  }
+}

@@ -3,7 +3,11 @@ import { Navbar, Nav, NavDropdown, Form, Button, FormControl } from 'react-boots
 
 import './Navbar.css'
 
-const AppNavbar = props => {
+export default props => {
+  function click() {
+    const elem = document.getElementById('collasible-nav-dropdown')
+  }
+
   return (
     <div>
       <Navbar collapseOnSelect expand="lg" bg="primary" variant="dark">
@@ -21,7 +25,12 @@ const AppNavbar = props => {
           </Nav>
           <Nav>
             <Form inline>
-              <FormControl className="mr-4" type="text" placeholder="Search" />
+              <FormControl
+                id="searchFormControl"
+                className="mr-4"
+                type="text"
+                placeholder="Search"
+              />
             </Form>
             <Nav.Link href="#deets">More deets</Nav.Link>
             <Nav.Link eventKey={2} href="#memes">
@@ -33,5 +42,3 @@ const AppNavbar = props => {
     </div>
   )
 }
-
-export default AppNavbar

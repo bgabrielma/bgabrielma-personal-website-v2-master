@@ -6,6 +6,9 @@ html,
 body {
   height: 100%;
   margin: 0;
+  font-family: 'Karla', sans-serif !important;
+
+  background: #F2F8FD;
 }
 
 .app-site {
@@ -15,6 +18,5 @@ body {
 }
 
 .app-content {
-  padding: 10px;
   flex: 1;
 }
