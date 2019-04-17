@@ -5,9 +5,8 @@ import './App.css'
 
 // Components
 import Home from '../Home/Home'
-
-// Components import
 import AppNavbar from '../Navbar/Navbar'
+
 export default class App extends Component {
   state = {}
   render() {
