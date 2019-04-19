@@ -2,143 +2,165 @@ import React from 'react'
 
 import { Container, Row, Col, Image, Button } from 'react-bootstrap'
 
-import angular from '../../assets/angular.png'
-import java from '../../assets/java.png'
-import react from '../../assets/react.png'
-import php from '../../assets/php.png'
-import mysql from '../../assets/mysql.png'
-import csharp from '../../assets/csharp.png'
-import nodejs from '../../assets/node.png'
-import codeigniter from '../../assets/codeigniter.png'
-import bootstrap from '../../assets/bootstrap.png'
-import docker from '../../assets/docker.png'
-import linux from '../../assets/linux.png'
+import angular from '../../assets/angular.svg'
+import java from '../../assets/java.svg'
+import react from '../../assets/react.svg'
+import php from '../../assets/php.svg'
+import mysql from '../../assets/mysql.svg'
+import csharp from '../../assets/csharp.svg'
+import codeigniter from '../../assets/codeigniter.svg'
+import bootstrap from '../../assets/bootstrap.svg'
+import docker from '../../assets/docker.svg'
+import linux from '../../assets/linux.svg'
+import javascript from '../../assets/js.svg'
 
 import './Home.css'
+
+import backgroundSkills from '../../assets/background-skills.svg'
+
+// Home components
+import HomeIntro from '../HomeIntro/HomeIntro'
 
 export default () => {
   return (
     <React.Fragment>
-      <div className="skills">
-        <Container fluid="true">
-          <Row>
-            <Col lg={12} className="d-flex justify-content-center mb-4 mt-4">
+      <div className="separator-frame sf-color-lightblue sf-h-5" />
+      <HomeIntro />
+      <div className="separator-frame sf-color-lightblue" />
+      <div className="home-main-content">
+        <div className="container h-100">
+          <div className="row h-100 align-items-center">
+            <div className="col-12 text-center">
+              <h1 className="font-weight-light">Em construção...</h1>
+              <p className="lead">A vida não é nada mais do que simples linhas de código.</p>
+              <p className="lead">
+                <em>{`#`}</em>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="separator-frame sf-color-lightblue" />
+      <div className="skills" style={{ backgroundImage: `url(${backgroundSkills})` }}>
+        <Container fluid="true" className="skills-area">
+          <Row className="text-center">
+            <Col lg={12} className="d-flex justify-content-center">
               <h1 className="title">Competências</h1>
             </Col>
-            <Col lg={3} className="mt-4">
+            <Col lg={2} className="mt-4">
               <Col lg={12} className="d-flex justify-content-center">
-                <Image className="logo250 " src={angular} fluid />
+                <Image className="skill-image shadow-sm" src={angular} />
               </Col>
-              <Col lg={12} className="mt-4 d-flex justify-content-center">
+              <Col lg={12} className="d-flex justify-content-center">
                 <Button variant="outline-website" className="shadow-sm">
                   Angular
                 </Button>
               </Col>
             </Col>
-            <Col lg={3} className="mt-4 ajust-center">
+            <Col lg={2} className="mt-4">
               <Col lg={12} className="d-flex justify-content-center">
-                <Image className="logo350" src={react} fluid />
+                <Image className="skill-image shadow-sm" src={react} />
               </Col>
-              <Col lg={12} className="mt-4 d-flex justify-content-center">
+              <Col lg={12} className="d-flex justify-content-center">
                 <Button variant="outline-website" className="shadow-sm">
-                  React e React-Native
+                  React.js
                 </Button>
               </Col>
             </Col>
-            <Col lg={3} className="mt-4 ajust-center">
+            <Col lg={2} className="mt-4">
               <Col lg={12} className="d-flex justify-content-center">
-                <Image className="logo150" src={java} fluid />
+                <Image className="skill-image shadow-sm" src={java} />
               </Col>
-              <Col lg={12} className="mt-4 d-flex justify-content-center">
+              <Col lg={12} className="d-flex justify-content-center">
                 <Button variant="outline-website" className="shadow-sm">
                   Java
                 </Button>
               </Col>
             </Col>
-            <Col lg={3} className="mt-4 ajust-center">
+            <Col lg={2} className="mt-4">
               <Col lg={12} className="d-flex justify-content-center">
-                <Image className="logo250" src={php} fluid />
+                <Image className="skill-image shadow-sm" src={php} />
               </Col>
-              <Col lg={12} className="mt-4 d-flex justify-content-center">
+              <Col lg={12} className="d-flex justify-content-center">
                 <Button variant="outline-website" className="shadow-sm">
                   PhP
                 </Button>
               </Col>
             </Col>
-            <Col lg={3} className="mt-4">
+            <Col lg={2} className="mt-4">
               <Col lg={12} className="d-flex justify-content-center">
-                <Image className="logo250" src={mysql} fluid />
+                <Image className="skill-image shadow-sm" src={mysql} />
               </Col>
-              <Col lg={12} className="mt-4 d-flex justify-content-center">
+              <Col lg={12} className="d-flex justify-content-center">
                 <Button variant="outline-website" className="shadow-sm">
                   MySQL
                 </Button>
               </Col>
             </Col>
-            <Col lg={3} className="mt-4">
+            <Col lg={2} className="mt-4">
               <Col lg={12} className="d-flex justify-content-center">
-                <Image className="logo250" src={csharp} fluid />
+                <Image className="skill-image shadow-sm" src={csharp} />
               </Col>
-              <Col lg={12} className="mt-4 d-flex justify-content-center">
+              <Col lg={12} className="d-flex justify-content-center">
                 <Button variant="outline-website" className="shadow-sm">
                   C#
                 </Button>
               </Col>
             </Col>
-            <Col lg={3} className="mt-4">
+            <Col lg={2} className="mt-4">
               <Col lg={12} className="d-flex justify-content-center">
-                <Image className="logo250" src={nodejs} fluid />
+                <Image className="skill-image shadow-sm" src={codeigniter} />
               </Col>
-              <Col lg={12} className="mt-4 d-flex justify-content-center">
-                <Button variant="outline-website" className="shadow-sm">
-                  Node.js *Básico
-                </Button>
-              </Col>
-            </Col>
-            <Col lg={3} className="mt-4">
               <Col lg={12} className="d-flex justify-content-center">
-                <Image style={{ width: '180px', height: '250px' }} src={codeigniter} fluid />
-              </Col>
-              <Col lg={12} className="mt-4 d-flex justify-content-center">
                 <Button variant="outline-website" className="shadow-sm">
                   CodeIgniter
                 </Button>
               </Col>
             </Col>
-            <Col lg={3} className="mt-4">
+            <Col lg={2} className="mt-4">
               <Col lg={12} className="d-flex justify-content-center">
-                <Image className="logo250" src={bootstrap} fluid />
+                <Image className="skill-image shadow-sm" src={bootstrap} />
               </Col>
-              <Col lg={12} className="mt-4 d-flex justify-content-center">
+              <Col lg={12} className="d-flex justify-content-center">
                 <Button variant="outline-website" className="shadow-sm">
                   Bootstrap
                 </Button>
               </Col>
             </Col>
-            <Col lg={3} className="mt-4">
+            <Col lg={2} className="mt-4">
               <Col lg={12} className="d-flex justify-content-center">
-                <Image className="logo250" src={docker} fluid />
+                <Image className="skill-image shadow-sm" src={docker} />
               </Col>
-              <Col lg={12} className="mt-4 d-flex justify-content-center">
+              <Col lg={12} className="d-flex justify-content-center">
                 <Button variant="outline-website" className="shadow-sm">
-                  Docker *Intermédio
+                  Docker
                 </Button>
               </Col>
             </Col>
-            <Col lg={3} className="mt-4">
+            <Col lg={2} className="mt-4">
               <Col lg={12} className="d-flex justify-content-center">
-                <Image className="logo250" src={linux} fluid />
+                <Image className="skill-image shadow-sm" src={linux} />
               </Col>
-              <Col lg={12} className="mt-4 d-flex justify-content-center">
+              <Col lg={12} className="d-flex justify-content-center">
                 <Button variant="outline-website" className="shadow-sm">
-                  Linux *Intermédio
+                  Linux
+                </Button>
+              </Col>
+            </Col>
+            <Col lg={2} className="mt-4">
+              <Col lg={12} className="d-flex justify-content-center">
+                <Image className="skill-image shadow-sm" src={javascript} />
+              </Col>
+              <Col lg={12} className="d-flex justify-content-center">
+                <Button variant="outline-website" className="shadow-sm">
+                  JavaScript
                 </Button>
               </Col>
             </Col>
           </Row>
         </Container>
       </div>
-      <div className="shadow-sm separator-frame sf-color-lightblue" />
+      <div className="separator-frame sf-color-lightblue" />
     </React.Fragment>
   )
 }

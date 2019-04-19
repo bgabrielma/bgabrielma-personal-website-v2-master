@@ -1,5 +1,5 @@
 .navbar {
-  background: #2196f3 !important;
+  background: #2B397C !important;
   height: 70px !important;
 }
 
@@ -15,6 +15,35 @@
 
 #searchFormControl:focus {
   width: 400px;
+}
+
+header a {
+  padding: 13px !important;
+  margin-left: 15px;
+  -o-transition: all 0.35s;
+  -ms-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+header .nav-link:hover {
+  background: #FFFFFF;
+  color: #53C1DE !important;
+  border-radius: 89% 11% 89% 11% / 29% 79% 21% 71%;
+}
+
+header .navbar-image>.navbar-brand {
+  padding: 0px !important;
+}
+
+header .navbar-image {
+  padding: 10px !important;
+}
+
+header .navbar-image:hover {
+  background: #628CBF;
+  border-radius: 73% 27% 86% 14% / 11% 63% 37% 89%;
 }
 
 .dropdown .dropdown-menu {
@@ -33,6 +62,7 @@
 }
 
 @media all and (max-width: 1000px) {
+
   .navbar,
   form {
     display: flex;
