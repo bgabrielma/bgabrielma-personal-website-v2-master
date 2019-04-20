@@ -88,8 +88,8 @@
 }
 
 .home-main-content {
-  height: 100vh;
-
+  min-height: 50vh;
+  padding: 50px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

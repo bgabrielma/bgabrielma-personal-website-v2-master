@@ -20,23 +20,18 @@ import backgroundSkills from '../../assets/background-skills.svg'
 
 // Home components
 import HomeIntro from '../HomeIntro/HomeIntro'
+import Timeline from '../Timeline/Timeline'
 
 export default () => {
   return (
     <React.Fragment>
-      <div className="separator-frame sf-color-lightblue sf-h-5" />
       <HomeIntro />
       <div className="separator-frame sf-color-lightblue" />
       <div className="home-main-content">
         <div className="container h-100">
           <div className="row h-100 align-items-center">
-            <div className="col-12 text-center">
-              <h1 className="font-weight-light">Em construção...</h1>
-              <p className="lead">A vida não é nada mais do que simples linhas de código.</p>
-              <p className="lead">
-                <em>{`#`}</em>
-              </p>
-            </div>
+            <div className="col-12 text-center" />
+            <Timeline />
           </div>
         </div>
       </div>
