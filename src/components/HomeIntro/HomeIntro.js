@@ -3,17 +3,16 @@ import { Container, Col, Row } from 'react-bootstrap'
 
 import './HomeIntro.css'
 
-import background from '../../assets/background-intro.svg'
+export default props => {
 
-export default () => {
   return (
     <React.Fragment>
-      <header className="intro" style={{ backgroundImage: `url(${background})` }}>
+      <header className="intro" style={{ backgroundImage: `url(${props.background})` }}>
         <Container className="h-100">
           <Row className="h-100 align-items-center">
-            <Col lg={12} className="text-center">
+            <Col lg={12} className={`text-center ${props.color}`}>
               <h1 className="font-weight-light">Bruno Gabriel Nunes Martins</h1>
-              <p className="lead">Website pessoal para fins profissionais</p>
+              <p className="lead">{props.title}</p>
               <p className="lead">
                 <em>{`- in #DevWorld`}</em>
               </p>

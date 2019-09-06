@@ -32,7 +32,7 @@ export default class Timeline extends Component {
           </Row>
         </Col>
         <Col lg={12} className="mt-4 mb-4">
-          <div className="main-timeline p-4 shadow-sm">
+          <div className="main-timeline p-4">
             <div className="timeline">
               <Button className="timeline-content shadow" href="http://istec.pt" target="_blank">
                 <div className="timeline-icon shadow">

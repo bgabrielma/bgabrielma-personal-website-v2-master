@@ -17,6 +17,7 @@ import javascript from '../../assets/js.svg'
 import './Home.css'
 
 import backgroundSkills from '../../assets/background-skills.svg'
+import background from '../../assets/background-intro.svg'
 
 // Home components
 import HomeIntro from '../HomeIntro/HomeIntro'
@@ -25,7 +26,10 @@ import Timeline from '../Timeline/Timeline'
 export default () => {
   return (
     <React.Fragment>
-      <HomeIntro />
+      <HomeIntro 
+        title='Website pessoal para fins profissionais'
+        background={background}
+        color='text-light' />
       <div className="separator-frame sf-color-lightblue" />
       <div className="home-main-content">
         <div className="container h-100">

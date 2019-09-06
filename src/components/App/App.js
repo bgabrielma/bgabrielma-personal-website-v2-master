@@ -5,6 +5,7 @@ import './App.css'
 
 // Components
 import Home from '../Home/Home'
+import Works from '../Works/Works'
 import AppNavbar from '../Navbar/Navbar'
 import NotFound from '../NotFound/NotFound'
 
@@ -22,6 +23,7 @@ export default class App extends Component {
             <Switch>
               <Route path="/" exact render={() => <Redirect to="home" />} />
               <Route path="/home" render={Home} />
+              <Route path="/works" render={Works} />
               <Route render={NotFound} />
             </Switch>
           </Router>
