@@ -10,13 +10,13 @@ export default props => {
   return (
     <div>
       <Navbar collapseOnSelect expand="lg" bg="primary" variant="dark">
-        <Navbar.Brand href="#home">bgabrielma.work</Navbar.Brand>
+        <Navbar.Brand href="/home">bgabrielma.work</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link href="./home">Home</Nav.Link>
+            <Nav.Link href="/home">Home</Nav.Link>
             <Nav.Link href="#" eventKey="disabled" disabled>Serviços</Nav.Link>
-            <Nav.Link href="./works">Os meus trabalhos</Nav.Link>
+            <Nav.Link href="/works">Os meus trabalhos</Nav.Link>
             <Nav.Link href="#" eventKey="disabled" disabled>Contacto</Nav.Link>
           </Nav>
           <Nav>
