@@ -26,7 +26,7 @@ import Timeline from '../Timeline/Timeline'
 export default () => {
   return (
     <React.Fragment>
-      <HomeIntro 
+      <HomeIntro
         title='Website pessoal para fins profissionais'
         background={background}
         color='text-light' />
